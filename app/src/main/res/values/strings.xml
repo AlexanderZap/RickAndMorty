@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Rick and Morty</string>
+    <string name="text_copied_to_clipboard">Текст скопирован</string>
 </resources>
