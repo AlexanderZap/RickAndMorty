@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/episodeFragment">
+
+    <fragment
+        android:id="@+id/characterFragment"
+        android:name="ru.zapashnii.rickandmorty.features.character.presentation.ui.CharacterFragment"
+        android:label="CharacterFragment" />
+    <fragment
+        android:id="@+id/episodeFragment"
+        android:name="ru.zapashnii.rickandmorty.features.episode.presentation.ui.EpisodeFragment"
+        android:label="EpisodeFragment" />
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="ru.zapashnii.rickandmorty.features.location.presentation.ui.LocationFragment"
+        android:label="LocationFragment" />
+</navigation>
