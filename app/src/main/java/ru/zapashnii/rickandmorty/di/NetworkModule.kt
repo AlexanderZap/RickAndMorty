@@ -9,6 +9,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import ru.zapashnii.rickandmorty.BuildConfig
 import ru.zapashnii.rickandmorty.network.Api
+import ru.zapashnii.rickandmorty.network.MainInterceptor
 import javax.inject.Singleton
 
 /** Класс создания сетевых объектов */
@@ -24,10 +25,16 @@ class NetworkModule {
 
     @Provides
     @Singleton
+    fun provideMainInterceptor(): MainInterceptor = MainInterceptor()
+
+    @Provides
+    @Singleton
     fun provideOkhttpClient(
+        mainInterceptor: MainInterceptor,
         httpLoggingInterceptor: HttpLoggingInterceptor,
     ): OkHttpClient =
         OkHttpClient.Builder()
+            .addInterceptor(mainInterceptor)
             .addInterceptor(httpLoggingInterceptor)
             .build()
 
