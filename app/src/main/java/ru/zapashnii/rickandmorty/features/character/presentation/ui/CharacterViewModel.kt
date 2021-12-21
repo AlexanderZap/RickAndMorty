@@ -1,4 +1,4 @@
-package ru.zapashnii.rickandmorty.presentation.character
+package ru.zapashnii.rickandmorty.features.character.presentation.ui
 
 import androidx.lifecycle.ViewModel
 

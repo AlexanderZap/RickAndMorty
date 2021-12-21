@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.episode.EpisodeFragment">
+    tools:context=".features.episode.presentation.ui.EpisodeFragment">
 
     <TextView
         android:layout_width="match_parent"

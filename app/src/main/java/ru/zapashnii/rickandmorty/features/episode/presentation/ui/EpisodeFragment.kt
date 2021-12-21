@@ -1,4 +1,4 @@
-package ru.zapashnii.rickandmorty.presentation.location
+package ru.zapashnii.rickandmorty.features.episode.presentation.ui
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,25 +8,25 @@ import android.view.View
 import android.view.ViewGroup
 import ru.zapashnii.rickandmorty.R
 
-/** Экран местоположений */
-class LocationFragment : Fragment() {
+/** Экран эпизодов */
+class EpisodeFragment : Fragment() {
 
     companion object {
-        fun newInstance() = LocationFragment()
+        fun newInstance() = EpisodeFragment()
     }
 
-    private lateinit var viewModel: LocationViewModel
+    private lateinit var viewModel: EpisodeViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.location_fragment, container, false)
+        return inflater.inflate(R.layout.episode_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(LocationViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(EpisodeViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

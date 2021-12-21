@@ -1,4 +1,4 @@
-package ru.zapashnii.rickandmorty.presentation.location
+package ru.zapashnii.rickandmorty.features.location.presentation.ui
 
 import androidx.lifecycle.ViewModel
 
