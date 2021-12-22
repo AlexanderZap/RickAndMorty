@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Rick and Morty</string>
     <string name="text_copied_to_clipboard">Текст скопирован</string>
+    <string name="location">Location</string>
+    <string name="episode">Episode</string>
+    <string name="character">Character</string>
 </resources>
